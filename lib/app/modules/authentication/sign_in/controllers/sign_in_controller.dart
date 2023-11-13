@@ -54,7 +54,6 @@ class SignInController extends GetxController {
     FirebaseAuth.instance.signOut().then((value) {
       getStorage.remove(signinWithFirebaseEmailAndPasswordKey);
       getStorage.remove(isSignedInWithGoogle);
-      getStorage.remove(isSignedInWithFacebook);
       Get.offAllNamed(Routes.SIGN_IN);
     }).catchError((e) {
       Get.snackbar('Error', e.toString());
