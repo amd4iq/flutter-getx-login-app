@@ -1,0 +1,33 @@
+name: getx_e_project
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=3.1.4 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.6
+  firebase_auth: ^4.13.0
+  firebase_core: ^2.22.0
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.2.0+1
+  flutter_facebook_auth: ^6.0.2
+  gap: ^3.0.1
+  get: 4.6.6
+  get_storage: ^2.1.1
+  google_sign_in: ^6.1.6
+
+dev_dependencies:
+  flutter_lints: 3.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/screens/
+    - assets/screens/onboarding/
+    - assets/screens/signin/
+    - assets/screens/signup/

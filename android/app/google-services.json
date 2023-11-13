@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107283899256",
+    "project_id": "getx-flutter-project",
+    "storage_bucket": "getx-flutter-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107283899256:android:9c0f1516275d0d48db1e8d",
+        "android_client_info": {
+          "package_name": "com.ahmed.getx_e_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVPh7RcLZ8eKVPdMPDHgj6j0ePboq9Q1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+}
