@@ -1,16 +1,6 @@
-# getx_e_project
+# flutter-getx login app
 
-A new Flutter project.
 
-## Getting Started
+full functional Flutter login app (Email, Google, Facebook) Firebase.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/amd4iq/flutter-getx-login-app/assets/16368800/2e3512a5-1cfc-4b9b-a594-fa9478ad7fbe)
