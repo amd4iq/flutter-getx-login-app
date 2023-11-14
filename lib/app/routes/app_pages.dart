@@ -2,12 +2,12 @@ import 'package:get/get.dart';
 
 import '../config/middleware/auth_middleware.dart';
 import '../config/middleware/first_launch_middleware.dart';
+import '../modules/authentication/forgot_password/bindings/forgot_password_binding.dart';
+import '../modules/authentication/forgot_password/views/forgot_password_view.dart';
 import '../modules/authentication/sign_in/bindings/sign_in_binding.dart';
 import '../modules/authentication/sign_in/views/sign_in_view.dart';
 import '../modules/authentication/sign_up/bindings/sign_up_binding.dart';
 import '../modules/authentication/sign_up/views/sign_up_view.dart';
-import '../modules/forgot_password/bindings/forgot_password_binding.dart';
-import '../modules/forgot_password/views/forgot_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/onboarding/views/onboarding_view.dart';

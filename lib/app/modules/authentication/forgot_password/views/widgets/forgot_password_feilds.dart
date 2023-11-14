@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_e_project/app/modules/authentication/forgot_password/controllers/forgot_password_controller.dart';
 import 'package:getx_e_project/app/modules/authentication/widgets/costum_text_field.dart';
-import 'package:getx_e_project/app/modules/forgot_password/controllers/forgot_password_controller.dart';
 
 class ForgotPasswordFeilds extends GetView<ForgotPasswordController> {
   const ForgotPasswordFeilds({
