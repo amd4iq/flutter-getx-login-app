@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_e_project/app/routes/app_pages.dart';
 
 class ForgotPasswordController extends GetxController {
   final resetPasswordController = TextEditingController();
@@ -40,9 +41,8 @@ class ForgotPasswordController extends GetxController {
       await FirebaseAuth.instance
           .sendPasswordResetEmail(email: resetPasswordController.text.trim());
 
-      // hide loading dialog
-      Get.back();
-
+      // go to login page
+      Get.offNamed(Routes.SIGN_IN);
       // show success massage
       Get.snackbar(
         'Success',
