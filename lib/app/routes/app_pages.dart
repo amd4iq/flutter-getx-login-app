@@ -1,15 +1,18 @@
 import 'package:get/get.dart';
-import 'package:getx_e_project/app/config/middleware/first_launch_middleware.dart';
+
 import '../config/middleware/auth_middleware.dart';
+import '../config/middleware/first_launch_middleware.dart';
+import '../modules/authentication/sign_in/bindings/sign_in_binding.dart';
+import '../modules/authentication/sign_in/views/sign_in_view.dart';
+import '../modules/authentication/sign_up/bindings/sign_up_binding.dart';
+import '../modules/authentication/sign_up/views/sign_up_view.dart';
+import '../modules/forgot_password/bindings/forgot_password_binding.dart';
+import '../modules/forgot_password/views/forgot_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
 import '../modules/settings/views/settings_view.dart';
-import '../modules/authentication/sign_in/bindings/sign_in_binding.dart';
-import '../modules/authentication/sign_in/views/sign_in_view.dart';
-import '../modules/authentication/sign_up/bindings/sign_up_binding.dart';
-import '../modules/authentication/sign_up/views/sign_up_view.dart';
 import '../modules/user_profile/bindings/user_profile_binding.dart';
 import '../modules/user_profile/views/user_profile_view.dart';
 
@@ -62,6 +65,13 @@ class AppPages {
       transition: Transition.fadeIn,
       transitionDuration: const Duration(milliseconds: 200),
       middlewares: [FirstLaunchMiddleware()],
+    ),
+    GetPage(
+      name: _Paths.FORGOT_PASSWORD,
+      page: () => const ForgotPasswordView(),
+      binding: ForgotPasswordBinding(),
+      transition: Transition.fadeIn,
+      transitionDuration: const Duration(milliseconds: 200),
     ),
   ];
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_e_project/app/modules/authentication/sign_in/controllers/sign_in_controller.dart';
 import 'package:getx_e_project/app/modules/authentication/widgets/custom_circle_button.dart';
+import 'package:getx_e_project/app/routes/app_pages.dart';
 
 class SignInAndButton extends GetView<SignInController> {
   final void Function()? onTap;
@@ -24,12 +25,17 @@ class SignInAndButton extends GetView<SignInController> {
             SizedBox(
               height: Get.height * 0.01,
             ),
-            const Text('Forgot Password?',
-                style: TextStyle(
-                  decoration: TextDecoration.underline,
-                  fontSize: 14,
-                  color: Colors.grey,
-                )),
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(Routes.FORGOT_PASSWORD);
+              },
+              child: const Text('Forgot Password?',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    fontSize: 14,
+                    color: Colors.grey,
+                  )),
+            ),
           ],
         ),
         CustomCircleButton(

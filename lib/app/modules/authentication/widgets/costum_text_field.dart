@@ -15,7 +15,6 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
     required this.hintText,
-
     this.textInputAction = TextInputAction.done,
     this.onSubmitted,
     this.obscureText = false,
@@ -32,14 +31,16 @@ class CustomTextField extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
+          color:
+              Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
           width: 1,
         ),
         borderRadius: BorderRadius.circular(10),
       ),
       width: Get.width * 0.85,
       child: TextField(
-        cursorColor: Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
+        cursorColor:
+            Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
         controller: controller,
         obscureText: obscureText,
         keyboardType: keyboardType,
@@ -47,13 +48,15 @@ class CustomTextField extends StatelessWidget {
         onSubmitted: onSubmitted,
         textInputAction: textInputAction,
         style: TextStyle(
-          color: Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white
-        ),
+            color: Get.currentRoute == Routes.SIGN_IN
+                ? Colors.grey
+                : Colors.white),
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: hintText,
           hintStyle: TextStyle(
-            color: Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
+            color:
+                Get.currentRoute == Routes.SIGN_IN ? Colors.grey : Colors.white,
           ),
         ),
       ),

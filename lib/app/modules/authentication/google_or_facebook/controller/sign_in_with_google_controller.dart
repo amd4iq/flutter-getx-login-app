@@ -9,7 +9,8 @@ import 'package:google_sign_in/google_sign_in.dart';
 class SignInWithGoogle extends GetxController {
   signInWithGoogle() async {
     // begin Google sign in
-    final GoogleSignInAccount? gUser = await GoogleSignIn().signIn();
+    final GoogleSignInAccount? gUser =
+        await GoogleSignIn().signIn().whenComplete(() => null);
 
     // obtain the auth details from the request
     final GoogleSignInAuthentication gAuth = await gUser!.authentication;
@@ -81,7 +82,4 @@ class SignInWithGoogle extends GetxController {
       return 'Sign In';
     }
   }
-
-
-
 }
